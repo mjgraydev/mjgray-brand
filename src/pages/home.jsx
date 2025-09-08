@@ -90,11 +90,18 @@ function Home() {
 
       </div>
 
+        <video src="">
 
 
+          
+        </video>
 
-      <div></div>
 
+      <div>
+
+      </div>
+
+        <img src="" alt="" />
 
 
       </div>
