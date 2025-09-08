@@ -1,0 +1,65 @@
+.hero-section {
+    
+    height: 60vh;
+    background-color: #d4d4d4;
+    color: #fff;
+    font-family: 'Josefin Sans';
+    align-content: center;
+    margin: 0px 15px;
+    border-radius: 15px;
+    padding: 0px 50px;
+}
+
+.hero-section p {
+
+    font-size: 25px;
+
+}
+
+.hero-section h2 {
+    font-size: 85px;
+    margin: 0px;
+}
+
+.getStarted-btn {
+
+    width: 120px;
+    height: 35px;
+    font-family: 'Josefin Sans';
+    background-color: #fff;
+    color:#000;
+    border: none;
+    border-radius: 15px;
+    align-self:center;
+}
+
+.elevated {
+
+    color: #fff;
+    font-family: 'Josefin Sans';
+    padding: 15px;
+
+}
+
+.elevated-container {
+
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+
+}
+
+.elevated-item {
+
+    padding: 15px;
+}
+
+.speak {
+    color: #000;
+    font-family: 'Josefin Sans';
+    padding: 15px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    height: 70vh;
+    align-content: center;
+}
