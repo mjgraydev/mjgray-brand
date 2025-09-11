@@ -1,5 +1,6 @@
 
-import styles from '../Components/Home.module.css'
+import styles from '../Components/Home.module.css';
+
 
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
       <section className={styles.elevated}>
 
         <h1>Experiences that Elevate</h1>
+        <h3>Guidance, design, code, and clarity for those building with purpose.</h3>
 
         <div className={styles['elevated-container']}>
 
@@ -72,40 +74,65 @@ function Home() {
       </section>
 
 
-      <section className={styles.speak}> 
+      <section className={styles['speak-container']}> 
 
-      
-      <div>
+    
 
-      <div>
+        <div >
 
-        <h1>Book the Voice that Moves Visionaries</h1>
-        <p>Michael Gray is a full stack engineer, UX strategist, and mentor with over a decade of experience turning ideas into scalable digital solutions. From leading men’s groups to mentoring the next generation of coders and creators, Michael’s voice carries both clarity and conviction. His talks blend high-performance strategy with grounded leadership — inspiring audiences to stop shrinking their vision and start building the future they were born to lead.</p>
-
-
-      <p>Book him to speak at your next event, workshop, or retreat — and prepare to shift the room.</p>
+            <h1>Book the Voice that Moves Visionaries</h1>
+            <p>Michael Gray is a full stack engineer, UX strategist, and mentor with over a decade of experience turning ideas into scalable digital solutions. From leading men’s groups to mentoring the next generation of coders and creators, Michael’s voice carries both clarity and conviction. His talks blend high-performance strategy with grounded leadership — inspiring audiences to stop shrinking their vision and start building the future they were born to lead.</p>
 
 
-      <button>Book Michael</button>
-
-      </div>
-
-        <video src="">
+          <p>Book him to speak at your next event, workshop, or retreat — and prepare to shift the room.</p>
 
 
-          
-        </video>
+          <button>Book Michael</button>
+
+        </div>
 
 
-      <div>
-
-      </div>
-
-        <img src="" alt="" />
+        <div>
 
 
-      </div>
+      <video width="640" height="480" autoPlay muted style={{ 
+    borderRadius: '15px',
+    WebkitBorderRadius: '15px',
+    clipPath: 'inset(0px round 15px)'
+  }}>
+        <source src="/gray_speaking.mp4" type="video/mp4" />
+        Your browser doesn't support the video tag.
+      </video>
 
+        </div>    
+      </section>
+
+
+      <section className={styles['connect-container']}>
+
+          <div>
+
+            <h1>Join the Community</h1>
+            <p>Each week we send out a curated newsletter with aggregated job opportunities, insights, forecast and best practices to level up in your tech career.</p>
+
+            <p>Occasionally, we host live events where we have give aways, and opportunties to meet with Michael one on one. Join the community and stay connected.</p>
+
+          </div>
+
+          <div>
+
+            <h2>Stay Connected</h2>
+            <p>After spending over a decade mentoring, teaching, designing and in development, it's only right that I share my experiences with you. Learn from my mistakes and don't strive to be like me, strive to be better.</p>
+
+            <div>
+
+              <div> LinkedIn</div>
+              <div>TikTok</div>
+              <div>Youtube</div>
+
+            </div>
+
+          </div>
 
       </section>
 

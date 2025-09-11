@@ -54,7 +54,7 @@
     padding: 15px;
 }
 
-.speak {
+.speak-container  {
     color: #000;
     font-family: 'Josefin Sans';
     padding: 15px;
@@ -63,4 +63,30 @@
     border-radius: 15px;
     height: 70vh;
     align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.speak-container h1 {
+
+    font-size: 75px;
+    margin-bottom: 5px;
+}
+
+
+.video-spot {
+
+    border-radius: 15px;
+
+}
+
+.connect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+    color: #fff;
+    font-family: 'Josefin Sans';
+    padding: 15px;
+
 }
