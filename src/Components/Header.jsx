@@ -1,40 +1,58 @@
 import logo from '../Assets/MG Logo - White - Final.png'
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <img src={logo} alt="Logo" className={styles['header-logo']} />
-      <nav className={styles['nav-menu']}>
+      
+      {/* Hamburger Button */}
+      <button 
+        className={styles['hamburger-btn']} 
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+      >
+        <span className={`${styles['hamburger-line']} ${isMenuOpen ? styles.open : ''}`}></span>
+        <span className={`${styles['hamburger-line']} ${isMenuOpen ? styles.open : ''}`}></span>
+        <span className={`${styles['hamburger-line']} ${isMenuOpen ? styles.open : ''}`}></span>
+      </button>
+
+      <nav className={`${styles['nav-menu']} ${isMenuOpen ? styles['nav-open'] : ''}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={closeMenu}>Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <a href="#speaking" onClick={closeMenu}>About</a>
           </li>
           <li>
-            <Link to="/specialities">Specialities</Link>
+            <a href="#elevation" onClick={closeMenu}>Elevation</a>
           </li>
           <li>
-            <Link to="/elevation">Elevation</Link>
+            <a href="#speaking" onClick={closeMenu}>Speaking</a>
           </li>
           <li>
-            <Link to="/speaking">Speaking</Link>
-          </li>
-          <li>
-            <Link to="/connect">Connect</Link>
+            <a href="#connect" onClick={closeMenu}>Connect</a>
           </li>
         </ul>
 
-      <button className={styles['getStarted-btn']}> Get Started</button>
-
-
+        <button className={styles['getStarted-btn']} onClick={closeMenu}>
+          Get Started
+        </button>
       </nav>
     </header>
   );
 }
-
 export default Header;

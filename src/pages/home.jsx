@@ -1,5 +1,13 @@
 
 import styles from '../Components/Home.module.css';
+import SoCiti from '../Assets/SoCiti Logo.png';
+import Stripe from '../Assets/Stripe.png';
+import Apple from '../Assets/Apple Logo.png';
+import DesignLab from '../Assets/DL Logo (1).png';
+import LinkedIn from '../Assets/LinkedIn Icon.png';
+import GitHub from '../Assets/GitHub Icon (1).png';
+import YouTube from '../Assets/Final YouTube Logo.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,10 +20,10 @@ function Home() {
             <h2>Michael Gray</h2>
             <p>You already have the tools. Stop shrinking your vision — it’s time to build what you were born to lead.</p>
 
-            <button>Get Started</button>
+            <button className={styles['action-btn']}>Get Started</button>
       </div>
 
-      <section className={styles.elevated}>
+      <section id='elevation' className={styles.elevated}>
 
         <h1>Experiences that Elevate</h1>
         <h3>Guidance, design, code, and clarity for those building with purpose.</h3>
@@ -29,7 +37,10 @@ function Home() {
 
             <p>Become the UX Designer who creates unparalled experiences for yourself, and your clients.</p>
 
-            <button>Learn More</button>
+
+            <a href="https://calendar.app.google/mxxhCDddyRAGsNJt6" target='blank'><button className={styles['action-btn']} >Learn More</button></a>
+
+          
 
           </div>
           
@@ -40,19 +51,19 @@ function Home() {
 
             <p>You can code. Unleash the full potential of your creativity and bring your ideas and creations to life.</p>
 
-            <button>Learn More</button>
+             <a href="https://calendar.app.google/mxxhCDddyRAGsNJt6" target='blank'><button className={styles['action-btn']} >Learn More</button></a>
 
 
           </div>
           
           <div div className={styles['elevated-item']}>
           
-            <h2>Start Ups, Entrenprenuers and Founders</h2>
+            <h2>Start Ups, Founders and Co Founders</h2>
             <h2>Scale</h2>
 
             <p>Started or getting started? The inward outward approach. Learn your personal why then, drive unparalled start up and business growth..</p>
 
-            <button>Learn More</button>
+             <a href="https://calendar.app.google/mxxhCDddyRAGsNJt6" target='blank'><button className={styles['action-btn']} >Learn More</button></a>
 
 
           </div>
@@ -65,7 +76,7 @@ function Home() {
             <p>Communal leanring enviroments that fosters collaboration and connectivity, fostering transformative learning.</p>
             
 
-            <button>Learn More</button>
+             <a href="https://calendar.app.google/mxxhCDddyRAGsNJt6" target='blank'><button className={styles['action-btn']} >Learn More</button></a>
 
           </div>
         
@@ -74,11 +85,11 @@ function Home() {
       </section>
 
 
-      <section className={styles['speak-container']}> 
+      <section id='speaking' className={styles['speak-container']}> 
 
     
 
-        <div >
+        <div className={styles['speak-text']} >
 
             <h1>Book the Voice that Moves Visionaries</h1>
             <p>Michael Gray is a full stack engineer, UX strategist, and mentor with over a decade of experience turning ideas into scalable digital solutions. From leading men’s groups to mentoring the next generation of coders and creators, Michael’s voice carries both clarity and conviction. His talks blend high-performance strategy with grounded leadership — inspiring audiences to stop shrinking their vision and start building the future they were born to lead.</p>
@@ -86,8 +97,8 @@ function Home() {
 
           <p>Book him to speak at your next event, workshop, or retreat — and prepare to shift the room.</p>
 
-
-          <button>Book Michael</button>
+          <a href="https://forms.gle/vCBy6FdGgrKn5tgE7" target='blank'> <button className={styles['action-btn']}>Book Michael</button></a>
+          
 
         </div>
 
@@ -95,40 +106,105 @@ function Home() {
         <div>
 
 
-      <video width="640" height="480" autoPlay muted style={{ 
-    borderRadius: '15px',
-    WebkitBorderRadius: '15px',
-    clipPath: 'inset(0px round 15px)'
-  }}>
-        <source src="/gray_speaking.mp4" type="video/mp4" />
-        Your browser doesn't support the video tag.
-      </video>
-
+              <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/a2bSOCIBghI?autoplay=1&mute=1&si=cjpnb2dFan4Cn638"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+              ></iframe>
         </div>    
       </section>
 
 
-      <section className={styles['connect-container']}>
 
-          <div>
+      <section className={styles['bcv-section']}>
+
+      <h1>Brands, Clients, and Ventures</h1>
+
+      <div className={styles['bcv-logos']}>
+        <div>
+
+          <img className={styles['img-width']} src={SoCiti} alt="SoCiti Logo" />
+
+        </div>
+
+        <div> 
+
+          <img className={styles['img-width']} src={Stripe} alt="Stripe Logo" />
+
+        </div>
+
+        <div>
+
+          <img className={styles['img-width']} src={Apple} alt="Apple Logo" />
+
+
+        </div>
+
+        <div>
+          
+          <img className={styles['img-width']} src={DesignLab} alt="DesignLab Logo" />
+          
+          
+          </div>
+
+      </div>
+
+
+
+      </section>
+
+
+      <section id='connect' className={styles['connect-container']}>
+
+          <div className={styles['connect-item']} >
 
             <h1>Join the Community</h1>
             <p>Each week we send out a curated newsletter with aggregated job opportunities, insights, forecast and best practices to level up in your tech career.</p>
 
             <p>Occasionally, we host live events where we have give aways, and opportunties to meet with Michael one on one. Join the community and stay connected.</p>
 
+            
+
+            <a href="https://forms.gle/A8PS2jTNq4T1vLEcA" target='blank'><button className={styles['getStarted-btn']}>Subscribe</button></a>
+
           </div>
 
-          <div>
+          <div className={styles['connect-item']} >
 
             <h2>Stay Connected</h2>
             <p>After spending over a decade mentoring, teaching, designing and in development, it's only right that I share my experiences with you. Learn from my mistakes and don't strive to be like me, strive to be better.</p>
 
-            <div>
+            <div className={styles['connect-logos']}>
 
-              <div> LinkedIn</div>
-              <div>TikTok</div>
-              <div>Youtube</div>
+              <div> 
+                
+                
+                <a href="https://www.linkedin.com/in/j-mgray/" target='blank'> <img className={styles['connect-logos']} src={LinkedIn} alt="LinkedIn Logo"/>  </a>
+              
+              
+              
+              </div>
+              
+              <div>
+
+               <a href="https://github.com/mjgraydev/" target='blank'> <img className={styles['connect-logos']} src={GitHub} alt="Github Logo"/> </a>
+
+              </div>
+
+              <div>
+
+               <a href="https://youtube.com/@michaelgraymedia?feature=shared" target='blank'> <img className={styles['connect-logos']} src={YouTube} alt="YouTube Logo"/> </a>
+
+              </div>
+              
+              
+              
 
             </div>
 

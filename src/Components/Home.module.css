@@ -9,6 +9,9 @@
     border-radius: 15px;
     padding: 0px 50px;
     background-image: url(/src/Assets/Final\ Gray\ Speaking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .hero-section p {
@@ -27,11 +30,36 @@
     width: 120px;
     height: 35px;
     font-family: 'Josefin Sans';
+    font-size: 18px;
     background-color: #fff;
     color:#000;
     border: none;
     border-radius: 15px;
     align-self:center;
+}
+
+.action-btn{
+
+    display: inline-block;
+    font-family: 'Josefin Sans';
+    padding: 0.75rem 1.5rem;
+    background-color: #00BFFF;
+    color: #000;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    color:#fff;
+    font-size: 18px;
+}
+
+.action-btn:hover {
+
+    background-color: #fff;
+    border: #00BFFF solid 1px;
+    color: #00BFFF
+
+
 }
 
 .elevated {
@@ -42,16 +70,34 @@
 
 }
 
+
+.elevated p {
+    font-size: 18px;
+}
+
 .elevated-container {
 
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .elevated-item {
 
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+}
+
+.elevated-item h2,
+.elevated-item p {
+  flex-grow: 0;
+}
+
+elevated-item > :not(.action-btn) {
+  margin-bottom: auto;
 }
 
 .speak-container  {
@@ -61,7 +107,7 @@
     background-color: #fff;
     margin: 20px;
     border-radius: 15px;
-    height: 70vh;
+    min-height: 60vh;
     align-content: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -74,6 +120,11 @@
     margin-bottom: 5px;
 }
 
+.speak-container p {
+    font-size: 18px;
+    line-height: 20px;
+}
+
 
 .video-spot {
 
@@ -81,12 +132,101 @@
 
 }
 
-.connect-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px; 
+
+.bcv-section {
+
     color: #fff;
     font-family: 'Josefin Sans';
     padding: 15px;
 
+}
+
+
+.bcv-logos {
+    margin: 25px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.connect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px; 
+    color: #fff;
+    font-family: 'Josefin Sans';
+    padding: 15px;
+
+}
+
+.connect-item {
+
+    border: #fff 1px solid;
+    border-radius: 15px;
+    padding: 25px;
+
+}
+
+.connect-logos {
+    display: flex;
+    gap: 35px;
+}
+
+.img-width{
+    width: 90px ;
+}
+
+.connect-logos {
+     width: 25px;
+}
+
+@media screen and (max-width: 430px){
+
+        .hero-section {
+    
+    height: 85vh;
+    align-content:end;
+    background-position: 75% 30% ;
+    }
+}
+
+
+
+@media screen and (min-width: 431px) and (max-width: 767px){
+
+    .speak-container  {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 75px 25px;
+        justify-content: center;
+        gap: 0;
+     
+
+    
+    }
+
+    iframe {
+
+        width: 425px;
+        height: 300px;
+        margin-top: 0;
+        justify-self: center;
+    }
+
+    .speak-text {
+        margin-bottom: 0px;
+    }
+
+    .connect-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+    
+    height: 85vh;
+    align-content:end;
+    background-position: 80% 30% ;
+    }
 }

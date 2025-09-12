@@ -1,20 +1,19 @@
+import styles from '../Components/Footer.module.css';
+import Logo from '../Assets/Final MG White.png';
+
 function Footer () {
     return (
         <>
+
+        <div className={styles.footer} >
         
-        <img src="" alt="Michael Gray Full Text Logo" />
+            <img className={styles.logo} src={Logo} alt="Michael Gray Logo" />
 
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Specialties</li>
-                <li>Elevation</li>
-                <li>Speaking</li>
-                <li>Connect</li>
-            </ul>
-        </nav>
+            <p className={styles.copyright} >Michael Gray © 2025 All Rights Reserved</p>
 
-        <button>Get Started</button>
+            <p className={styles.credit} >Design & Developed by Michael Gray</p>
+
+        </div>
 
         </>
     )
