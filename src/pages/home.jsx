@@ -114,7 +114,7 @@ function Home() {
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
-                  allow="autoplay; fullscreen"
+                  autoplay fullscreen
                   allowfullscreen
               ></iframe>
         </div>    
