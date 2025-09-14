@@ -183,12 +183,37 @@ elevated-item > :not(.action-btn) {
 
 @media screen and (max-width: 430px){
 
-        .hero-section {
+    .hero-section {
     
     height: 85vh;
     align-content:end;
     background-position: 75% 30% ;
     }
+
+    .speak-container  {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 75px 25px;
+        justify-content: center;
+        gap: 0;
+     
+
+    
+    }
+
+     .connect-container {
+        grid-template-columns: 1fr;
+    }
+
+      iframe {
+
+        width: 425px;
+        height: 300px;
+        margin-top: 0;
+        justify-self: center;
+    }
+
 }
 
 
