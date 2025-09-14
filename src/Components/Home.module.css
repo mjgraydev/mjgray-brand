@@ -194,13 +194,26 @@ elevated-item > :not(.action-btn) {
 
         display: grid;
         grid-template-columns: 1fr;
-        padding: 75px 25px;
+        padding: 200px 25px;
         justify-content: center;
-        gap: 0;
+        gap: 25px;
      
 
     
     }
+
+
+
+    .speak-container h1 {
+
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+.speak-container p {
+    font-size: 18px;
+    line-height: 20px;
+}
 
      .connect-container {
         grid-template-columns: 1fr;
@@ -208,11 +221,21 @@ elevated-item > :not(.action-btn) {
 
       iframe {
 
-        width: 425px;
+        width: 300px;
         height: 300px;
         margin-top: 0;
         justify-self: center;
     }
+
+    .bcv-logos {
+    margin: 35px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+
+}
 
 }
 
