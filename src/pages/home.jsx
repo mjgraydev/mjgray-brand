@@ -18,9 +18,13 @@ function Home() {
 
             <p>Full Stack Engineer, Founder, Mentor, Thought Leader</p>
             <h2>Michael Gray</h2>
-            <p>You already have the tools. Stop shrinking your vision — it’s time to build what you were born to lead.</p>
+            
 
-            <button className={styles['action-btn']}>Get Started</button>
+            <a href="https://calendar.app.google/mxxhCDddyRAGsNJt6" target='blank'><button className={styles['action-btn']}>Get Started</button></a>
+      </div>
+
+      <div className={styles.quote}>
+          <p>You already have the tools. Stop shrinking your vision — it’s time to build what you were born to lead.</p>
       </div>
 
       <section id='elevation' className={styles.elevated}>

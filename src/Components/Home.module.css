@@ -70,6 +70,17 @@
 
 }
 
+.quote {
+    color: #000;
+    font-family: 'Josefin Sans';
+    padding: 15px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-style: italic;
+}
+
 
 .elevated p {
     font-size: 18px;
@@ -194,7 +205,7 @@ elevated-item > :not(.action-btn) {
 
         display: grid;
         grid-template-columns: 1fr;
-        padding: 200px 25px;
+        padding: 75px 25px;
         justify-content: center;
         gap: 25px;
      
