@@ -8,10 +8,7 @@ import Footer from './Components/Footer';
 
 import Home from './pages/home';
 import About from './pages/about';
-import Specialities from './pages/specialities';
-import Elevation from './pages/elevation';
-import Speaking from './pages/speaking';
-import Connect from './pages/connect'
+
 
 
 
