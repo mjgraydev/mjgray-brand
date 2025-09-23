@@ -175,7 +175,7 @@ const BLE = () => {
               <h1>You're invited to the live session</h1>
               <p>Ask questions, join the chat, and learn alongside designers building independent businesses and studios—solving real problems for great clients.</p>
             </div>
-            <a href="https://lu.ma/21dstuc6" target="_blank" rel="noopener noreferrer">
+            <a href="https://luma.com/2tpf8zvs" target="_blank" rel="noopener noreferrer" className={styles.registerBtn}>
               <button className={styles.filledBtn}>Register</button>
             </a>
           </div>
