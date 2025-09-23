@@ -281,8 +281,10 @@
   }
 
   .sectionFive {
-    background: url() left center/cover no-repeat;
+     .sectionFive {
+    background: url(../Assets/sean-michael-stripe_VSCO.JPG) left center/cover no-repeat;
     height: 400px;
+  }
   }
 
   .bleImg {

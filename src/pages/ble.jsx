@@ -61,6 +61,7 @@ const BLE = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              title='Build.Launch.Earn. - Weve Got Another Live Stream'
             ></iframe>
           </div>
         </section>
@@ -180,11 +181,13 @@ const BLE = () => {
           </div>
         </section>
       </main>
-
+        {/* NHPro 24: 3*/}
       <footer className={styles.footer}>
         <img src={MGLogo}alt="MG Logo" />
         <p>Michael Gray &copy; 2025</p>
         <p className={styles.creditText}>Design & Developed by Michael Gray</p>
+
+        
       </footer>
     </div>
   );

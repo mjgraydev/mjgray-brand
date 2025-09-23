@@ -1,6 +1,6 @@
 
 import styles from '../Components/About.module.css';
-import BookMichael from '../Assets/bookMichael.jpg';
+
 
 
 function About (){
