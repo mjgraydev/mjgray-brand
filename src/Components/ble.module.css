@@ -55,7 +55,7 @@
 
 .sectionOne p {
   padding-top: 5px;
-  margin: 0;
+  margin: 0px ;
 }
 
 .bleImg {
@@ -228,11 +228,13 @@
 }
 
 .footer {
-  margin-top: 55px;
+  margin-top: 0px;
+  padding-top: 10px;
   text-align: center;
   color: #fff;
   font-family: 'Josefin Sans';
   margin-bottom: 0px;
+  background-color: #0A2540;
 }
 
 .footer img {
@@ -313,7 +315,8 @@
   }
 
   .sectionFive {
-    background: url() left center/cover no-repeat;
+    background: url(../Assets/sean-michael-stripe_VSCO.JPG) left center/cover no-repeat;
+    height: 400px;
   }
 
   .bleImg {
