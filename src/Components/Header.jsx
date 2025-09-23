@@ -35,7 +35,7 @@ function Header() {
             <Link to="/" onClick={closeMenu}>Home</Link>
           </li>
           <li>
-            <a href="#speaking" onClick={closeMenu}>About</a>
+            <Link to="/about" onClick={closeMenu}>About</Link>
           </li>
           <li>
             <a href="#elevation" onClick={closeMenu}>Elevation</a>
